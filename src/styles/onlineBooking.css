@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+}
+
+.online-booking__section{
+    width: 100%;
+}
+
+.online-booking__section__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    width: 100%;
+}
+
+.online-booking__form{
+    width: 100%;
+}
+
+/*////////////////////////// Кастомный select ////////////////////////////*/
+
+.select{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 90px;
+    margin-bottom: 30px;
+}
+
+.input-title{
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.input-wrapper{
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    height: 53px;
+    margin-bottom: 30px;
+}
+
+.select__input{
+    width: 100%;
+    padding: 15px  10px;
+    font-size: 16px;
+    position: absolute;
+    cursor: pointer;
+    border: 2px solid rgb(234, 197, 179);
+}
+
+.select__options{
+    width: 100%;
+    max-width: 700px;
+    list-style: none;
+    overflow: hidden;
+    transition: .2s linear;
+    border: none;
+    height: fit-content;
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    top: 87px;
+    height: 0;
+}
+
+.select__options_opened{
+    height: fit-content;
+    border: 2px solid rgb(234, 197, 179);
+    border-top: none;
+}
+
+.select__option{
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.select__option:hover{
+    background-color: rgb(231, 231, 231);
+}
+
+/*////////////////////////// Календарь ////////////////////////////*/
+
+div .air-datepicker-nav--title{
+    font-size: 16px;
+}
+
+div .air-datepicker.-inline-{
+    box-shadow: 0px 0px 5px 0px;
+    max-width: 700px;
+    min-width: 700px;
+}
+
+div .air-datepicker-body--cells.-days-{
+    height: 300px;
+    align-content: space-around;
+}
+
+.air-datepicker-nav{
+    background-color: rgb(234, 197, 179);
+}
+
+div .air-datepicker-cell.-selected-.-current-,
+div .air-datepicker-cell.-selected-:hover,
+div .air-datepicker-cell.-selected-{
+    background-color: rgb(234, 197, 179);
+    color: black;
+}
+
+div .air-datepicker-body--day-name{
+    font-size: 16px;
+}
+
+div .-weekend-{
+    color: rgb(250, 56, 56);
+}
+
+/*////////////////////////// Контактная информация ////////////////////////////*/
+
+.contacts{
+    margin-top: 50px;
+}
+
+.input-wrapper label{
+    position: absolute;
+    bottom: 35px;
+    top: 20px;
+    left: 20px;
+    opacity: 0.5;
+    transition: .1s linear;
+    user-select: none;
+    cursor: text;
+}
+
+.contact-input{
+    width: 100%;
+    padding: 15px 10px;
+    border: 2px solid rgb(234, 197, 179);
+    font-size: 16px;
+}
+
+.contact-input:not(:placeholder-shown) ~ label{
+    top: -20px;
+    left: 0;
+    font-size: 14px;
+    opacity: 1;
+}
+
+.contact-input:focus ~ label{
+    left: 0;
+    top: -20px;
+    font-size: 14px;
+    opacity: 1;
+}
+
+.submitButton{
+    width: 100%;
+    max-width: 700px;
+    height: 56px;
+    font-size: 16px;
+    background-color: rgb(234, 197, 179);
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 850px) {
+    .online-booking__section__content{
+        width: 95%;
+    }
+
+    div .air-datepicker.-inline-{
+        min-width: calc(100% - 10px);
+        margin: 0 5px;
+    }
+    
+
+}
+
+@media (max-width: 500px) {
+    div .air-datepicker-body--cells.-days-{
+        height: auto;
+    }
+   
+}
+

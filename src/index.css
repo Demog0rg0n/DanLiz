@@ -1,13 +1,149 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 70px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-title{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-family: 'Pattaya', sans-serif;
+}
+
+/*///////////////////// Кнопки записи и заказа звонка /////////////////////////// */
+
+
+.right-bottom-buttons{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    justify-content: space-between;
+    width: 170px;
+    align-items: flex-end;
+}
+
+.right-bottom-button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-color: rgb(234, 197, 179);
+    overflow: hidden;
+    transition: .1s linear;
+    border: 1px solid black;
+}
+
+.right-bottom-button:hover{
+    width: 170px;
+}
+
+.right-bottom-button__img{
+    height: 40px;
+    width: 40px;
+    margin: 15px;
+}
+
+.right-bottom-button__text{
+    display: inline;
+    width: 70px;
+}
+
+/*///////////////////// Консультация /////////////////////////// */
+
+.consultation{
+    background-color: rgb(234, 197, 179);
+    height: 450px;
+    padding-bottom: 0;
+}
+
+div .consultation__content{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    left: 100px;
+    height: 100%;
+}
+
+.consultation img{
+    height: 350px;
+    margin-left: 30px;
+    align-self: flex-end;
+    
+}
+
+.consultation__form-title {
+    margin: 30px 0;
+    font-size: 30px;
+}
+
+.consultation__submit-button{
+    width: 100%;
+    height: 53px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #db3232;
+    color: white;
+    transition: .1s linear;
+}
+
+.consultation__submit-button:hover{
+    transform: translateY(2.5px);
+}
+
+/*///////////////////// Подвал //////////////////////*/
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footer__content {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+}
+
+.social-media a{
+    height: 45px;
+    width: 45px;
+    margin-right: 20px;
+}
+
+.social-media img{
+    height: 45px;
+    width: 45px;
+}
+
+.emailAndPhone{
+    color: white;
+    line-height: 30px;
+}
+

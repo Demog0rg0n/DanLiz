@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("../fonts/Roboto-Bold.ttf");
+}
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url("../fonts/Roboto-Medium.ttf");
+}
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto-Regular";
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.header{
+    height: 90px;
+    background-color: #241f1f;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.header__content{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 20px;
+}
+
+.logo{
+    height: 70px;
+    width: 100px;
+
+}
+
+.logo img{
+    height: 70px;
+}
+
+.phone-number{
+    position: relative;
+    color: white;
+    opacity: 0.8;
+}
+
+/*////////////////// Навигация /////////////////////*/
+
+.navigation{
+    display: flex;
+    color: rgb(234, 197, 179);
+    height: 100%;
+    font-size: 18px;
+}
+
+.navigation__list{
+    display: flex;
+    list-style: none;
+    width: 700px;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.navigation__list__element{
+    height: 100%;
+
+}
+
+.navigation__list__element a{
+    color: rgb(234, 197, 179);
+    padding: 35px 20px;
+    display: inline-block;
+
+}
+
+.navigation__list__element:hover{
+    background-color: #2e2b2b;
+}
+
+.navigation__menu{
+    padding: 25px 20px;
+    margin-left: 100px;
+    display: none;
+    color: rgb(234, 197, 179);
+}
+
+.navigation__menu:hover{
+    background-color: #2e2b2b;
+    cursor: pointer;
+}
+
+.lines{
+    display: flex;
+    height: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+.line{
+    width: 22px;
+    height: 2px;
+    background-color: rgb(234, 197, 179);
+}
+
+@media (max-width: 1100px) {
+    .navigation {
+        display: none;
+    }
+
+    .navigation__menu {
+        display: flex;
+    }
+}
+
+

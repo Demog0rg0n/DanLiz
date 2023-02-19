@@ -1,0 +1,23 @@
+.review-page__section__content{
+    max-width: 1000px;
+    height: fit-content;
+}
+
+.review-form__wrapper{
+    width: 100%;
+    max-width: 700px;
+
+}
+
+.review-form{
+    width: 100%;
+}
+
+.review-foreword{
+    line-height: 25px;
+    margin-bottom: 50px;
+}
+
+.textarea-wrapper{
+    height: fit-content;
+}

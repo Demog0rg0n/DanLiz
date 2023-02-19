@@ -1,0 +1,86 @@
+.subscriptions-swiper{
+    width: 1200px;
+    height: 400px;
+    border: 1px solid black;
+    margin-bottom: 70px;
+}
+
+div .swiper-slide{
+    height: 400px;
+    width: 500px;
+    background-color: rgb(234, 197, 179);
+}
+
+.subscriptions-wrapper__title {
+    margin-bottom: 20px;
+}
+
+/*//////////////////////// Услуги ///////////////////////////*/
+
+.services{
+    width: 100%;
+}
+
+.price-page__section .page-title{
+    margin-bottom: 30px;
+}
+
+.services__group__title{
+    margin-bottom: 10px;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.services__group__title:first-child{
+    margin-top: 0;
+}
+
+.services__group__items{
+    line-height: 30px;
+    width: 100%;
+}
+
+.services__group__item{
+    position: relative;
+    border: 3px solid rgb(234, 197, 179);
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.services__group__item__name{
+    width: 700px;
+    font-size: 18px;
+}
+
+.services__group__item__price{
+    font-size: 20px;
+}
+
+.services__group__item__time{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.services__group__item__time img{
+    height: 25px;
+    position: relative;
+    bottom: 2px;
+    margin-right: 5px;
+}
+
+.services__group__item__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.services__group__item__button{
+    background-color: rgb(234, 197, 179);
+    padding: 5px 10px;
+}

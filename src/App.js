@@ -1,23 +1,39 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
+
 import './App.css';
+
+import Header from './components/Header';
+import RequestCallPopup from './components/RequestCallPopup';
+import Consultation from './components/Consultation';
+
+import RightBottomButtons from './components/RightBottomButtons';
+
+import AddressPage from './pages/AddressPage';
+import OnlineBooking from './pages/OnlineBooking';
+import OurMasters from './pages/OurMasters';
+import Price from './pages/Price';
+import ReviewPage from './pages/ReviewPage';
+import MainPage from './pages/MainPage';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <RequestCallPopup />
+
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/address" element={<AddressPage />} />
+        <Route path="/online-booking" element={<OnlineBooking />} />
+        <Route path="/price" element={<Price />} />
+        <Route path="/our-masters" element={<OurMasters />} />
+        <Route path="/reviews" element={<ReviewPage />} />
+      </Routes>
+
+      <Consultation />
+      <RightBottomButtons />
+      <Footer />
     </div>
   );
 }

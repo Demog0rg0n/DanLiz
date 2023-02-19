@@ -1,0 +1,15 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG Editor - http://github.com/mzalive/SVG Editor/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#ffffff" id="canvas_background" height="302" width="302" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_1" y2="200" x2="135" y1="130" x1="55" stroke-width="20" stroke="#ffffff" fill="none"/>
+  <line transform="rotate(-1 190.00003051757767,137) " stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_2" y2="77.5" x2="257.250008" y1="196.5" x1="122.750008" stroke-width="20" stroke="#ffffff" fill="none"/>
+ </g>
+</svg>
