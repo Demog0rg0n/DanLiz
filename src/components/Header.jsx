@@ -16,7 +16,7 @@ const Header = () => {
         <Link to={"/"} className="logo">
           <img src={logoSrc} alt="" />
         </Link>
-        <div className="phone-number">+7 977 555 58 38</div>
+        <a href='tel:+79775555838' className="phone-number">+7 977 555 58 38</a>
         <Navigation />
         <NavigationMenu />
       </div>

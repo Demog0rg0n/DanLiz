@@ -147,3 +147,13 @@ div .consultation__content{
     line-height: 30px;
 }
 
+
+
+
+.custom-button{
+    width: 100%;
+    padding: 15px 0px;
+    text-align: center;
+    background-color: rgb(234, 197, 179);
+}
+

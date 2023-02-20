@@ -2,9 +2,8 @@ import React from 'react'
 
 import { Autoplay, Mousewheel, Navigation } from 'swiper'
 
-import {Swiper, SwiperSlide} from 'swiper/react'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css/bundle'
-
 
 const Subscriptions = () => {
   return (

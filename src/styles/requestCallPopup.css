@@ -48,7 +48,7 @@ div .input-wrapper.input-wrapper_in-popup{
     cursor: pointer;
     border-radius: 5px;
     background-color: white;
-    
+
 }
 
 input[type="checkbox"]{
@@ -71,7 +71,6 @@ input[type="checkbox"]{
     background: url("../images/checkbox.png");
     background-size: contain;
     border: 1px solid #db3232;
-
 }
 
 .form__submit{

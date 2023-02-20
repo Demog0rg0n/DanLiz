@@ -2,6 +2,8 @@ import React from 'react'
 
 import "../styles/review.css"
 
+import CustomInput from "../components/CustomInput"
+
 const ReviewPage = () => {
   return (
     <main className='review-page'>
@@ -19,30 +21,11 @@ const ReviewPage = () => {
 					<div className="review-form__wrapper">
 						<form className="review-form">
 
-							<div className="input-wrapper">
-								<input className='contact-input' id='reviewName' type="text" name='reviewName' placeholder=' ' />
-								<label htmlFor="reviewName">Ваше имя</label>
-							</div>
-
-							<div className="input-wrapper">
-								<input className='contact-input' id='reviewPhoneNumber' type="tel" name='reviewPhoneNumber' placeholder=' ' />
-								<label htmlFor="reviewPhoneNumber">Номер телефона</label>
-							</div>
-							
-							<div className="input-wrapper">
-								<input className='contact-input' id='email' type="email" name='email' placeholder=' ' />
-								<label htmlFor="email">Почта</label>
-							</div>
-
-							<div className="input-wrapper">
-								<input className='contact-input' id='serviceName' type="tel" name='serviceName' placeholder=' ' />
-								<label htmlFor="serviceName">Название услуги</label>
-							</div>
-
-							<div className="input-wrapper">
-								<input className='contact-input' id='telephone' type="tel" name='telephone' placeholder=' ' />
-								<label htmlFor="telephone">Имя мастера</label>
-							</div>
+							<CustomInput id={"reviewName"} value={"Ваше имя"} type={"text"}/>
+							<CustomInput id={"reviewPhoneNumber"} value={"Номер телефона"} type={"tel"}/>
+							<CustomInput id={"reviewEmail"} value={"Почта"} type={"email"}/>
+							<CustomInput id={"serviceName"} value={"Название услуги"} type={"text"}/>
+							<CustomInput id={"masterName"} value={"Имя мастера"} type={"text"}/>
 
 							<div className="input-wrapper textarea-wrapper">
 								<textarea className='contact-input' id='reviewText' type="tel" name='reviewText' placeholder=' ' rows={10} />
