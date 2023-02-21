@@ -2,7 +2,7 @@ import React from 'react'
 
 import "../styles/addressPage.css" 
 
-import qr from "../images/qr.jpg"
+import qr from "../images/qr.png"
 
 const AddressPage = () => {
   return (

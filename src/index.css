@@ -71,17 +71,58 @@ main{
 /*///////////////////// Консультация /////////////////////////// */
 
 .consultation{
-    background-color: rgb(234, 197, 179);
+    background-color: rgb(0, 0, 0);
     height: 450px;
     padding-bottom: 0;
+    background-size: cover;
+    background-blend-mode: darken;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+
+.consultation__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.consultation__form__top{
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+}
+
+.consultation__form__bottom{
+    display: flex;
+    margin-top: 20px;
 }
 
 div .consultation__content{
     display: flex;
     flex-direction: row-reverse;
+    flex-direction: column;
     position: relative;
-    left: 100px;
-    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.consultation__content::before,
+.consultation__content::after{
+    content: " ";
+    width: 80%;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 2px;
+    position: relative;
+}
+
+.consultation__content::before{
+    bottom: 50px;
+}
+
+.consultation__content::after{
+    top: 50px;
 }
 
 .consultation img{
@@ -92,24 +133,29 @@ div .consultation__content{
 }
 
 .consultation__form-title {
-    margin: 30px 0;
+    margin-bottom: 40px;
     font-size: 30px;
 }
 
 .consultation__submit-button{
-    width: 100%;
     height: 53px;
     font-size: 16px;
-    margin-top: 10px;
     border: none;
     cursor: pointer;
     background-color: #db3232;
     color: white;
     transition: .1s linear;
+    padding: 0px 40px;
 }
 
 .consultation__submit-button:hover{
     transform: translateY(2.5px);
+}
+
+div .consultation-input{
+    max-width: 350px;
+    margin-bottom: 0;
+    color: black;
 }
 
 /*///////////////////// Подвал //////////////////////*/
@@ -155,5 +201,7 @@ div .consultation__content{
     padding: 15px 0px;
     text-align: center;
     background-color: rgb(234, 197, 179);
+    border: 3px solid rgb(244, 170, 134);
+    font-size: 16px;
 }
 

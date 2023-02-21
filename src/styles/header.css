@@ -24,10 +24,13 @@ a{
 
 .header{
     height: 90px;
-    background-color: #241f1f;
     display: flex;
     justify-content: center;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
 }
 
 .header__content{
@@ -71,22 +74,36 @@ a{
     width: 700px;
     height: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 
 .navigation__list__element{
-    height: 100%;
-
+    height: fit-content;
+    transition: .1s linear;
+    box-sizing: border-box;
+    position: relative;
 }
 
 .navigation__list__element a{
     color: rgb(234, 197, 179);
-    padding: 35px 20px;
     display: inline-block;
-
+    padding: 5px;
 }
 
-.navigation__list__element:hover{
-    background-color: #2e2b2b;
+.navigation__list__element::before{
+    content: " ";
+    position: absolute;
+    width: fit-content;
+    width: 0px;
+    height: 2px;
+    background-color: rgb(234, 197, 179);
+    bottom: 0px;
+    left: 0;
+    transition: .1s linear;
+}
+
+.navigation__list__element:hover.navigation__list__element::before{
+    width: 100%;
 }
 
 .navigation__menu{

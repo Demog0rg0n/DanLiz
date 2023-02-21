@@ -21,7 +21,7 @@ const OnlineBooking = () => {
               <CustomInput id={"onlineBookingName"} value={"Ваше имя"} type={"text"}/>
               <CustomInput id={"onlineBookingpPhoneNumber"} value={"Номер телефона"} type={"tel"}/>
             </div>
-            <input className='submitButton' type="submit" value="Записаться" />
+            <input className='custom-button' type="submit" value="Записаться" />
           </form>
 
         </div>

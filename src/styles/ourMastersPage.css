@@ -16,7 +16,7 @@
 .master__photo{
     height: 435px;
     width: 350px;
-    border: 4px solid rgb(234, 197, 179);
+    border: 4px solid #5c4a3e;
     box-sizing: border-box;
     margin-bottom: 15px;
 }
@@ -40,7 +40,7 @@
 .serificateImg__wrapper{
     display: flex;
     justify-content: center;
-    border: 3px solid rgb(234, 197, 179);
+    border: 3px solid #5c4a3e;
     box-sizing: border-box;
     background-color: rgb(234, 197, 179);
 
