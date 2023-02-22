@@ -5,7 +5,7 @@ import CustomInput from './CustomInput'
 const Consultation = () => {
   return (
     <section className='consultation'>
-			<div className="consultation__content">
+			<div className="consultation__content topAndBottomLines">
 				
 				<h2 className='consultation__form-title'>Заказать консультацию</h2>
 
@@ -14,7 +14,6 @@ const Consultation = () => {
 						<CustomInput id={"consultationPhone"} type={"tel"} value={"Номер телефона"} additionalClass={"consultation-input"} />
 						<CustomInput id={"consultationName"} type={"text"} value={"Имя"} additionalClass={"consultation-input"} />
 						<input type="submit" className='consultation__submit-button' value={"Отправить заявку"}/>
-
 					</div>
 					<div className="consultation__form__bottom">
 						<CustomCheckbox id={"consultation-personal-data-processing-policy"} value={"Согласие с политикой обработки персональных данных"}/>

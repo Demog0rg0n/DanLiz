@@ -8,7 +8,7 @@ import Consultation from './components/Consultation';
 
 import RightBottomButtons from './components/RightBottomButtons';
 
-import AddressPage from './pages/AddressPage';
+import ContactPage from './pages/ContactPage';
 import OnlineBooking from './pages/OnlineBooking';
 import OurMasters from './pages/OurMasters';
 import Price from './pages/Price';
@@ -24,7 +24,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/address" element={<AddressPage />} />
+        <Route path="/address" element={<ContactPage />} />
         <Route path="/online-booking" element={<OnlineBooking />} />
         <Route path="/price" element={<Price />} />
         <Route path="/our-masters" element={<OurMasters />} />
