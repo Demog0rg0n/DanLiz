@@ -2,25 +2,25 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 
 import requestCallImg from "../images/request-call.png"
-import { openPopup } from '../redux/slices/requestCallPopupSlice'
+import { openRequestCallPopup } from '../redux/slices/popupSlice'
+
+export function removeScroll(selector) {
+	const $popup = document.querySelector(selector)
+	$popup.style.top = window.scrollY + "px"
+
+	const $body = document.querySelector("body")
+	$body.style.overflow = "hidden"
+}
 
 const RequestCall = ({text, imgSrc}) => {
 
   const dispatch = useDispatch()
 
-	function removeScroll() {
-		dispatch(openPopup())
-
-		const $popup = document.querySelector(".popup-wrapper")
-		$popup.style.top = window.scrollY + "px"
-
-		const $body = document.querySelector("body")
-		$body.style.overflow = "hidden"
-
-	}
-
   return (
-    <div onClick={() => removeScroll()} className="right-bottom-button">
+    <div onClick={() => {
+		removeScroll(".popup-wrapper")
+		dispatch(openRequestCallPopup())
+	}} className="right-bottom-button">
 		<div className="right-bottom-button__text">Заказать звонок</div>
 		<img className='right-bottom-button__img' src={requestCallImg} alt="" />
     </div>

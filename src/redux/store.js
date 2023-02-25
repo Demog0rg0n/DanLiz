@@ -1,12 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 
 import onlineBookingSlice from './slices/onlineBookingSlice';
-import requestCallPopupSlice from './slices/requestCallPopupSlice';
+import popupSlice from './slices/popupSlice';
 
 export const store = configureStore({
   reducer: {
     onlineBookingSlice,
-    requestCallPopupSlice,
+    popupSlice,
   },
 });
 

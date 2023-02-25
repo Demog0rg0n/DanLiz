@@ -48,7 +48,8 @@
     font-size: 16px;
     position: absolute;
     cursor: pointer;
-    border: 2px solid rgb(234, 197, 179);
+    border: 4px solid rgb(205 148 54);
+    background-color: white;
 }
 
 .select__options{
@@ -68,7 +69,7 @@
 
 .select__options_opened{
     height: fit-content;
-    border: 2px solid rgb(234, 197, 179);
+    border: 4px solid rgb(205 148 54);
     border-top: none;
 }
 
@@ -101,13 +102,13 @@ div .air-datepicker-body--cells.-days-{
 }
 
 .air-datepicker-nav{
-    background-color: rgb(234, 197, 179);
+    background-color: rgb(205 148 54);
 }
 
 div .air-datepicker-cell.-selected-.-current-,
 div .air-datepicker-cell.-selected-:hover,
 div .air-datepicker-cell.-selected-{
-    background-color: rgb(234, 197, 179);
+    background-color: rgb(205 148 54);
     color: black;
 }
 
@@ -139,7 +140,7 @@ div .-weekend-{
 .contact-input{
     width: 100%;
     padding: 15px 10px;
-    border: 2px solid rgb(234, 197, 179);
+    border: 4px solid rgb(205 148 54);
     font-size: 16px;
 }
 
@@ -148,6 +149,8 @@ div .-weekend-{
     left: 0;
     font-size: 14px;
     opacity: 1;
+    color: white;
+
 }
 
 .contact-input:focus ~ label{
@@ -155,16 +158,8 @@ div .-weekend-{
     top: -20px;
     font-size: 14px;
     opacity: 1;
-}
+    color: white;
 
-.submitButton{
-    width: 100%;
-    max-width: 700px;
-    height: 56px;
-    font-size: 16px;
-    background-color: rgb(234, 197, 179);
-    border: none;
-    cursor: pointer;
 }
 
 @media (max-width: 850px) {

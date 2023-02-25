@@ -1,26 +1,31 @@
 import React from 'react'
 
-import "../styles/requestCallPopup.css"
+import "../styles/popup.css"
 
 import closePopupImg from "../images/close-popup.png"
 
 import { useDispatch, useSelector } from 'react-redux'
-import { closePopup } from '../redux/slices/requestCallPopupSlice'
+import { closeRequestCallPopup } from '../redux/slices/popupSlice'
 import CustomCheckbox from './CustomCheckbox'
 import CustomInput from './CustomInput'
 
+export function setScroll() {
+	const $body = document.querySelector("body")
+	$body.style.overflow = "initial"
+}
+
 const RequestCallPopup = () => {
-	const popupState = useSelector(state => state.requestCallPopupSlice.popupState)
+
+	const popupState = useSelector(state => state.popupSlice.requestCallPopupState)
 	const dispatch = useDispatch()
-	function setScroll() {
-		dispatch(closePopup())
-		const $body = document.querySelector("body")
-		$body.style.overflow = "initial"
-	}
+
   return ( 
     <div className={`popup-wrapper ${popupState && "popup_opened"}`}>
 		<div className="request-call-popup">
-			<img onClick={() => setScroll()} className='close-popup-button' src={closePopupImg} alt="" />
+			<img onClick={() => {
+				setScroll()
+				dispatch(closeRequestCallPopup())
+			}} className='close-popup-button' src={closePopupImg} alt="" />
 			<h2 className="request-call-popup__title">Заказать звонок</h2>
 			<form className='request-call-popup__form' action="#">
 				<CustomInput value={"Ваше имя"} type={"text"} id={"name"} />
