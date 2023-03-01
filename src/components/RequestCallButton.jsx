@@ -13,7 +13,7 @@ export function removeScroll(selector) {
 	$body.style.overflow = "hidden"
 }
 
-const RequestCall = ({text, imgSrc}) => {
+const RequestCall = () => {
 
   const dispatch = useDispatch()
 
