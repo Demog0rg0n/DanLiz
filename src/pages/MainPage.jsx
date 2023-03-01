@@ -6,6 +6,7 @@ import "../styles/mainPage.css"
 import info from "../info.json"
 
 import logo from "../images/logo.png"
+import InteriorSwiper from '../components/InteriorSwiper'
 
 const MainPage = () => {
   return (
@@ -18,11 +19,12 @@ const MainPage = () => {
 			</div>
 			<img src={logo} alt="" className="main-page__section-top__logo" />
 		</section>
+		<InteriorSwiper />
 		<section className='main-page__section-info'>
 			<div className="main-page__section__content container">
 				{
 					info.map((infoItem) => (
-						<AboutUsItem imgSrc={infoItem.imgSrc} paragraphs={infoItem.paragraphs} />
+						<AboutUsItem key={infoItem.imgSrc} imgSrc={infoItem.imgSrc} paragraphs={infoItem.paragraphs} />
 					))
 				}
 			</div>

@@ -42,6 +42,7 @@ main{
     justify-content: space-between;
     width: 170px;
     align-items: flex-end;
+    z-index: 100;
 }
 
 .right-bottom-button{
@@ -51,7 +52,7 @@ main{
     width: 70px;
     height: 70px;
     border-radius: 35px;
-    background-color: rgb(234, 197, 179);
+    background-color: rgb(205 148 54);
     overflow: hidden;
     transition: .1s linear;
     border: 1px solid black;
@@ -146,12 +147,12 @@ div .consultation__content{
 }
 
 .consultation__submit-button{
-    height: 53px;
+    height: 57px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-    background-color: #db3232;
-    color: white;
+    background-color: rgb(205 148 54);
+    color: rgb(0, 0, 0);
     transition: .1s linear;
     padding: 0px 40px;
 }

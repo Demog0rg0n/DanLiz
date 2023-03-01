@@ -32,7 +32,7 @@ const ReviewPage = () => {
 								<label htmlFor="reviewText">Отзыв</label>
 							</div>
 
-							<input className='submitButton' type="submit" value="Оставить отзыв" />
+							<input className='custom-button' type="submit" value="Оставить отзыв" />
 	
 						</form>
 					</div>

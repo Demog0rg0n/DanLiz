@@ -22,8 +22,8 @@ const Subscriptions = () => {
 				autoplay = {{delay: 10000}}
 			>
 				{
-					[...new Array(10)].map(() => (
-						<SwiperSlide>
+					[...new Array(10)].map((index) => (
+						<SwiperSlide key={index}>
 							<div className="subscriptions-swiper__slide"></div>
 						</SwiperSlide>
 					))

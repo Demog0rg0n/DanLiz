@@ -5,7 +5,7 @@
     margin-bottom: 70px;
 }
 
-div .swiper-slide{
+.subscriptions-swiper .swiper-slide{
     height: 400px;
     width: 500px;
     background-color: rgb(234, 197, 179);
@@ -147,6 +147,12 @@ div .swiper-slide{
     border: 2px solid rgb(205 148 54);
     color: rgb(205 148 54);
     margin-bottom: 10px;
+    transition: .1s linear;
+}
+
+.service-popup-item__button:hover{
+    background-color: rgb(205 148 54);
+    color: rgb(0, 0, 0);
 }
 
 .service-popup-item{
@@ -185,7 +191,6 @@ div .swiper-slide{
 .services-popup-body::-webkit-scrollbar{
     width: 6px;
     background-color: rgba(0, 0, 0, 0.7);
-
 }
 
 .services-popup-body::-webkit-scrollbar-thumb{

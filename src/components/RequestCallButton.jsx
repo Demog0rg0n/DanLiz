@@ -1,7 +1,8 @@
 import React from 'react'
-import { useDispatch } from 'react-redux'
 
 import requestCallImg from "../images/request-call.png"
+
+import { useDispatch } from 'react-redux'
 import { openRequestCallPopup } from '../redux/slices/popupSlice'
 
 export function removeScroll(selector) {
@@ -17,12 +18,18 @@ const RequestCall = ({text, imgSrc}) => {
   const dispatch = useDispatch()
 
   return (
-    <div onClick={() => {
-		removeScroll(".popup-wrapper")
-		dispatch(openRequestCallPopup())
-	}} className="right-bottom-button">
-		<div className="right-bottom-button__text">Заказать звонок</div>
-		<img className='right-bottom-button__img' src={requestCallImg} alt="" />
+    <div 
+			onClick={() => {
+				removeScroll(".popup-wrapper")
+				dispatch(openRequestCallPopup())
+			}} 
+			className="right-bottom-button"
+		>
+
+			<div className="right-bottom-button__text">Заказать звонок</div>
+
+			<img className='right-bottom-button__img' src={requestCallImg} alt="" />
+
     </div>
   )
 }

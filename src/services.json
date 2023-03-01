@@ -1,6 +1,7 @@
 [
     {
         "name": "Массаж",
+        "background": "https://frankfurt.apollo.olxcdn.com/v1/files/ubju3qvdysk63-KZ/image;s=1000x700",
         "items": [
             {"name": "Массаж общий", "price": 3500, "time": 60},
             {"name": "Массаж спины", "price":  2500, "time": 30},
@@ -11,6 +12,7 @@
         },
     {
         "name": "Массажный спа-уход",
+        "background": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/3c/a9/e8/diamond-clinic-main-foto.jpg?w=1200&h=1200&s=1",
         "items": [
             {"name": "Массажный уход \"Лимфодренажный\"", "price":  3900, "time": 50},
             {"name": "Массажный уход \"СПА-Релакс\"", "price": 3300, "time": 50},
@@ -24,6 +26,7 @@
         },
     {
         "name": "Массажный спа уход по китайской методике",
+        "background": "https://www.institut-du-cours.fr/234-tm_large_default/osmo-thermy.jpg",
         "items": [
             {"name": "Массажный уход \"Гуаша\" (зона на выбор: спина, живот, ноги)", "price":  4500, "time": 50},
             {"name": "Динамический баночный массажный уход (зона на выбор: спина, живот, ноги)", "price":  4500, "time": 50},
@@ -32,6 +35,7 @@
     },
     {
         "name": "Уходовые процедуры по телу",
+        "background": "https://i1.photo.2gis.com/images/branch/0/30258560091741475_aa48_300x300.jpg",
         "items": [
             {"name": "Обёртывание \"Шампань\", \"Шоколад\", \"Три водоросли\" (кремовое на всё тело)", "price":  2700, "time": 60},
             {"name": "Обёртывание \"Ламинария\" (листами ламинарии на всё тело)", "price":  3300, "time": 50},
@@ -47,6 +51,7 @@
     },
     {
         "name": "Аппаратные процедуры",
+        "background": "http://seashell-beauty.ru/wp-content/uploads/2020/09/rf-lifting.jpg",
         "items": [
             {"name": "Электростатический массаж на аппарате Hivamat 200 (1 зона)", "price":  1000, "time": 30},
             {"name": "Электростатический массаж на аппарате Hivamat 200 (общий)", "price":  3500, "time": 60}

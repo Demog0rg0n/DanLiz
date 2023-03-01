@@ -20,7 +20,6 @@ const Navigation = () => {
         ))
       }
       </ul>
-     
     </nav>
   )
 }

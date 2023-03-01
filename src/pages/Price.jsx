@@ -15,7 +15,7 @@ const Price = () => {
 					<Subscriptions />
 					<Services />
 				</div>
-
+				
 			</section>
     </main>
   )

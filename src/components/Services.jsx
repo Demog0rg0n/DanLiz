@@ -12,14 +12,17 @@ const Services = () => {
 
   return (
 		<>
-		<ServicesPopup {...services[activeServicePopup]} />
+		
+			<ServicesPopup {...services[activeServicePopup]} serviceTypeIndex={activeServicePopup}/>
+			
 			<div className="services">
 				{
 					services.map((group, index) => (
-						<ServicesGroup title={group.name} items={group.items} index={index}/>
+						<ServicesGroup key={index} title={group.name} index={index} background={group.background}/>
 					))
 				}
 			</div>
+
 		</>
     
   )

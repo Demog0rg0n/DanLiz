@@ -30,10 +30,11 @@ div .popup_opened{
 .request-call-popup{
     height: 500px;
     width: 400px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     padding: 30px 15px;
-    border: 3px solid rgb(234, 197, 179);
+    border: 3px solid rgb(205 148 54);
     position: relative;
+    color: rgb(255, 255, 255);
 }
 
 div .input-wrapper.input-wrapper_in-popup{
@@ -78,6 +79,6 @@ input[type="checkbox"]{
     width: 100%;
     font-size: 16px;
     margin-top: 30px;
-    background-color: rgb(234, 197, 179);
+    background-color: rgb(205 148 54);
     border: none;
 }
